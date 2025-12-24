@@ -1,114 +1,58 @@
-/* ===== GLOBAL RESET ===== */
-* {
-  box-sizing: border-box;
-}
+/* App.css */
 
-body {
-  margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-}
-
-
-/* ===== MAIN LAYOUT ===== */
 .container {
   display: flex;
   gap: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
 }
 
 
-/* ===== BACKGROUND VIDEO ===== */
+
+
 #bg-video {
-  position: fixed;      /* full screen on desktop/laptop */
+  position: absolute; /* safer on mobile than fixed */
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-  opacity: 0.55;
+  min-height: 100vh; /* full height of viewport */
+  object-fit: cover; /* keeps video aspect ratio */
+  z-index: -1; /* behind text */
 }
-
-
-/* ===== FLOATING ACTION BUTTONS (DESKTOP / LAPTOP) ===== */
-.whatsapp-float,
-.call-float {
+.whatsapp-float {
   position: fixed;
+  bottom: 120px;
+  right: 50px;
   z-index: 9999;
 }
 
-.whatsapp-float {
-  bottom: 120px;
-  right: 50px;
+.whatsapp-float img {
+  width: 60px;
+  height: 60px;
+  opacity: 100%;
+  cursor: pointer;
 }
 
 .call-float {
-  bottom: 50px;
+  position: fixed;
+  bottom: 50px;  
   right: 50px;
+  z-index: 9999;
 }
 
-.whatsapp-float img,
 .call-float img {
   width: 60px;
   height: 60px;
   cursor: pointer;
 }
 
-/* Location icon if used */
-.location {
+.location{
+
   width: 50px;
   height: 50px;
-}
-
-
-/* ===== MOBILE (max-width: 768px) ===== */
-@media (max-width: 768px) {
-  /* Main container: stack vertically and add side padding */
-  .container {
-    flex-direction: column;
-    gap: 16px;
-    padding: 16px;
-  }
-
-  .container > * {
-    width: 100%;
-  }
-
-  /* Softer video on mobile to avoid weird scroll issues */
-  #bg-video {
-    position: absolute;
-    height: 100vh;
-  }
-
-  /* Floating buttons: smaller and closer to corner */
-  .whatsapp-float {
-    bottom: 90px;
-    right: 20px;
-  }
-
-  .call-float {
-    bottom: 20px;
-    right: 20px;
-  }
-
-  .whatsapp-float img,
-  .call-float img {
-    width: 48px;
-    height: 48px;
-  }
-
-  /* Optional: nicer text/layout on small screens */
-  h1,
-  h2,
-  h3 {
-    text-align: center;
-  }
-
-  section,
-  .hero,
-  .card {
-    padding: 16px 12px;
-  }
 }
