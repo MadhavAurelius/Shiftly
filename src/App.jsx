@@ -1,8 +1,8 @@
 import "./App.css";
 import location from "./assets/Location.png";
-import bgVideo from "./assets/3d.mp4";
-import photo from "./assets/phone.jpg.png";
-import video from "./assets/video.mp4"
+import bgVideo from "./assets/video.mp4";
+import photo from "./assets/phone.png";
+
 function App() {
   return (
     <>
@@ -16,7 +16,7 @@ function App() {
             Furniture moving within and outside Hail
             <a
               href="https://maps.app.goo.gl/bCmCHAPZnGmvfanb9"
-              target="_blank"
+              target="_ blank"
               rel="noopener noreferrer"
             >
               <img className="location" src={location} alt="Location" />
@@ -60,7 +60,7 @@ function App() {
 
           {/* Background video */}
           <video id="bg-video" autoPlay muted loop playsInline>
-            <source src={video} type="video/mp4" />
+            <source src={bgVideo} type="video/mp4" />
             Your browser does not support HTML5 video.
           </video>
         </div>
