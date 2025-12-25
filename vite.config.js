@@ -3,7 +3,7 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  base: "./",   // ✅ Use relative paths to avoid blank page
+  base: "./",       // ✅ relative paths prevent blank page
   build: {
     outDir: "dist"  // ✅ default Vite build folder
   }
