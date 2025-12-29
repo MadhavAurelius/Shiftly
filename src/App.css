@@ -7,54 +7,38 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
-/* Background video */
-#bg-video {
-  position: fixed;          /* cover full screen */
-  top: 0;
-  left: 0;
-  opacity:50% ;
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  object-position: center;
-  z-index: -2;              /* lowest layer */
-}
-
-/* Optional dark overlay for readability */
-.bg-overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.35);
-  z-index: -1;
-}
-
-/* Main content container (hero) */
 .container {
-  position: relative;
-  z-index: 1;               /* above video + overlay */
-  min-height: 100vh;
-  padding: 2rem 1rem;
   display: flex;
-  flex-direction: column;   /* stack content */
-  align-items: center;
-  justify-content: center;  /* vertical center */
-  text-align: center;
-  margin-right: 80%;
-  color: #ffffff;
-}
-
-/* Inner wrapper so text does not stretch too wide on desktop */
-.container-inner {
+  flex-direction: column;
+  align-items: center; /* Center text horizontally */
+  margin: 0 auto;      /* Center container itself */
+  padding: 1rem;
   max-width: 900px;
+}
+
+.container-inner {
   width: 100%;
+  text-align: center; /* Center all text */
 }
 
-/* General text spacing */
-h1, h2, h3, p {
-  margin: 0 0 0.6rem;
+/* Optional: reduce margin-bottom for mobile */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.6rem;
+    justify-content: center;
+  }
+
+  h2, h3 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    margin-bottom: 0.4rem;
+  }
 }
 
-/* Location icon */
 .location {
   width: 40px;
   height: 40px;
