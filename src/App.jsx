@@ -33,7 +33,7 @@ function App() {
             +966 59 277 0758
           </h2>
 
-          <h2 dir="rtl" style={{ textAlign: "right", marginRight: 100 }}>
+          <h2 dir="rtl" style={{ textAlign: "right", marginLeft:100 }}>
             نقل العفش داخل حايل وخارج حايل<br />
             بيع - شراء - نقل - الأثاث وفك وتركيب<br />
             داخل حايل وخارج حايل مع فك وتركيب<br /><br />

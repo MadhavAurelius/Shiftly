@@ -11,7 +11,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center; /* Center text horizontally */
-  margin: 0 auto;      /* Center container itself */
+  margin: 0 90% 0 0;      /* Center container itself */
   padding: 1rem;
   max-width: 900px;
 }
