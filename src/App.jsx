@@ -12,7 +12,7 @@ function App() {
             Shiftly
           </h1>
 
-          <h2 style={{ color: "#163913ff", textAlign: "center", marginLeft:450, fontSize:30}}>
+          <h2 style={{ color: "#0e0d01ff", textAlign: "center", marginLeft:450, fontSize:30}}>
             Furniture moving within and outside Hail
             <a
               href="https://maps.app.goo.gl/bCmCHAPZnGmvfanb9"
@@ -58,11 +58,7 @@ function App() {
             <img className="call" src={photo} alt="Call" />
           </a>
 
-          {/* Background video */}
-          <video id="bg-video" autoPlay muted loop playsInline>
-            <source src={bgVideo} type="video/mp4" />
-            Your browser does not support HTML5 video.
-          </video>
+         
         </div>
       </div>
     </>

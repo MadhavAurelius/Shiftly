@@ -12,6 +12,7 @@ body {
   position: fixed;          /* cover full screen */
   top: 0;
   left: 0;
+  opacity:50% ;
   width: 100vw;
   height: 100vh;
   object-fit: cover;
@@ -38,7 +39,7 @@ body {
   align-items: center;
   justify-content: center;  /* vertical center */
   text-align: center;
-  margin-right: 100%;
+  margin-right: 80%;
   color: #ffffff;
 }
 
