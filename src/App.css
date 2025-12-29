@@ -7,41 +7,22 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
+/* Main container */
 .container {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center text horizontally */
-  margin: 0 90% 0 0;      /* Center container itself */
-  padding: 1rem;
+  align-items: center;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
   max-width: 900px;
+  text-align: center;
 }
 
-.container-inner {
-  width: 100%;
-  text-align: center; /* Center all text */
-}
-
-/* Optional: reduce margin-bottom for mobile */
-@media (max-width: 768px) {
-  h1 {
-    font-size: 1.6rem;
-    justify-content: center;
-  }
-
-  h2, h3 {
-    font-size: 1.2rem;
-  }
-
-  p {
-    font-size: 0.95rem;
-    line-height: 1.4;
-    margin-bottom: 0.4rem;
-  }
-}
-
+/* Location icon */
 .location {
   width: 40px;
   height: 40px;
+  cursor: pointer;
 }
 
 /* Floating WhatsApp button */
@@ -55,7 +36,6 @@ body {
 .whatsapp-float img {
   width: 60px;
   height: 60px;
-  cursor: pointer;
 }
 
 /* Floating Call button */
@@ -69,22 +49,12 @@ body {
 .call-float img {
   width: 60px;
   height: 60px;
-  cursor: pointer;
 }
 
-/* ============ Mobile responsive layout ============ */
+/* ============ Mobile responsive ============ */
 @media (max-width: 768px) {
-  .container {
-    padding: 1.5rem 1rem;
-    justify-content: center; /* center on mobile too */
-  }
-
-  .container-inner {
-    max-width: 100%;
-  }
-
   h1 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 
   h2, h3 {
@@ -101,19 +71,22 @@ body {
     height: 32px;
   }
 
-  .whatsapp-float img,
-  .call-float img {
-    width: 50px;
-    height: 50px;
+  .whatsapp-float,
+  .call-float {
+    right: 20px;
   }
 
   .whatsapp-float {
     bottom: 90px;
-    right: 20px;
   }
 
   .call-float {
     bottom: 30px;
-    right: 20px;
+  }
+
+  .whatsapp-float img,
+  .call-float img {
+    width: 50px;
+    height: 50px;
   }
 }

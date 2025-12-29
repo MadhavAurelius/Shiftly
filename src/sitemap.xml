@@ -4,5 +4,20 @@
     <loc>https://majestic-queijadas-639f77.netlify.app/</loc>
     <priority>1.0</priority>
   </url>
-  <!-- Add other pages here -->
+  <url>
+    <loc>https://majestic-queijadas-639f77.netlify.app/about</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://majestic-queijadas-639f77.netlify.app/contact</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://majestic-queijadas-639f77.netlify.app/services</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://majestic-queijadas-639f77.netlify.app/blog</loc>
+    <priority>0.7</priority>
+  </url>
 </urlset>
